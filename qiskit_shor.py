@@ -468,7 +468,6 @@ class Shor:
 
         # For each simulation result, print proper info to user
         # and try to calculate the factors of N
-        c_start = time.time()
         for measurement in list(counts.keys()):
             # Get the x_final value from the final state qubits
             logger.info("------> Analyzing result %s.", measurement)
@@ -481,8 +480,6 @@ class Shor:
                 result.successful_counts = result.successful_counts + 1
                 if factors not in result.factors:
                     result.factors.append(factors)
-        c_end = time.time()
-        result.classical_time = c_end - c_start
         return result
 
 
