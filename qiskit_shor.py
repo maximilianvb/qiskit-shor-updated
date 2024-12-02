@@ -10,6 +10,8 @@
 # copyright notice, and modified files need to carry a notice indicating
 # that they have been altered from the originals.
 
+# modified from origianl at: https://github.com/Qiskit/qiskit/blob/stable/0.17/qiskit/algorithms/factorizers/shor.py
+
 """Shor's factoring algorithm."""
 
 from typing import Optional, Union, Tuple, List
